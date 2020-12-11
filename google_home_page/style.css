@@ -1,0 +1,206 @@
+/* No idea, but everyone doing it*/
+* {
+}
+
+/* ENTIRE BODY DEFAULTS*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-size: small;
+}
+
+/* HEADER */
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px;
+  border: 1px solid orange;
+}
+/* "maybe change this to navbar dunno?"NAVBAR: */
+nav#top-navbar li {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: right;
+  z-index: 986;
+  align-items: center;
+  justify-content: flex-end;
+  float: right;
+}
+
+/*HEADER ELEMENTS */
+header ul li a {
+  display: inline-block;
+  line-height: 24px;
+  outline: none;
+  font-size: 13px;
+  vertical-align: middle;
+  text-decoration: none;
+  list-style: none;
+}
+header ul li a.sign {
+  border: 1px solid #4285f4;
+  font-weight: bold;
+  background-color: #4285f4;
+  color: #fff;
+  display: inline-block;
+  line-height: 28px;
+  padding: 0px 12px;
+  border-radius: 2px;
+}
+header ul li a:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+/* APPS */
+nav#top-navbar ul.apps {
+  display: none;
+}
+/* APPS: HOVER */
+nav#top-navbar ul.apps:hover {
+  display: none;
+}
+/* APPS: CLICK */
+nav#top-navbar ul.apps:click {
+  display: none;
+}
+
+/* CENTER BODY */
+div.center-search {
+  align-self: center;
+}
+/* MIDDLE SECTION: LOGO + BUTTONS */
+div.center-logo {
+  margin-top: 47px;
+  height: 233px;
+  text-align: center;
+}
+/* GOOGLE LOGO */
+div.center-logo img {
+  display: inline;
+  position: static;
+  padding-top: 109px;
+  width: auto;
+}
+/* SEARCH BAR */
+div.center-search div.search {
+  display: flex;
+  flex: 1;
+  padding: 5px 8px 0px 16px;
+  width: auto;
+}
+
+/* SEARCH BAR */
+div.center-search div.search input {
+  width: 560px;
+  display: flex;
+  margin-top: -37px;
+  padding-left: 14px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-color: rgba(223, 225, 229, 0);
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  background-color: #fff;
+  display: flex;
+  border-radius: 24px;
+  height: 44px;
+  margin: 0 auto;
+  font: 16px;
+  line-height: 34px;
+  height: 34px;
+}
+/* SEARCH BAR: HOVER */
+div.center-search div.search input:hover{
+  box-shadow: 0 3px 10px rgba(32, 33, 36, 0.28);
+  border: 1px solid #dadce0;
+
+}
+/* BUTTONS */
+div.center-search div.buttons {
+  height: 70px;
+  padding-top: 18px;
+  text-align: center;
+}
+/*  BUTTONS: SEARCH + LUCKY */
+div.center-search div.buttons input {
+  width: auto;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  color: #3c4043;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+/* BUTTONS: HOVER */
+div.center-search div.buttons input:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+/*FOOTER*/
+footer {
+  width: 100%;
+  display: block;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  text-align: left;
+  border-top: 1px solid #dadce0;
+  line-height: 40px;
+  position: absolute;
+  width: 100%;
+  font-size: 14px;
+  background-color: #f2f2f2;
+}
+
+/* FOOTER ELEMENTS */
+footer li {
+  text-decoration: none;
+  list-style: none;
+}
+/* FOOTER DECORATIONS */
+footer li a {
+  display: inline-block;
+  color: #70757a;
+  padding-left: 27px;
+  margin: 0px;
+  white-space: nowrap;
+  text-decoration: none;
+
+}
+
+/* FOOTER ELEMENTS: HOVER */
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER ELEMENTS: VISITED */
+footer li a:visited {
+  color: #609;
+}
+/* FOOTER LEFT: LEFT SIDE ALIGNMENT*/
+footer ul.footer-left li {
+  float: left;
+}
+
+/*FOOTER RIGHT: RIGHT SIDE ALIGNMENT*/
+footer ul.footer-right li {
+  float: right;
+  margin-right: 50px;
+}
