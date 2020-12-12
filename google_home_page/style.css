@@ -1,59 +1,93 @@
 /* No idea, but everyone doing it*/
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
 }
 
 /* ENTIRE BODY DEFAULTS*/
 body {
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100%;
-  padding: 0px;
-  margin: 0px;
   font-size: small;
 }
 
 /* HEADER */
 header {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  height: 60px;
+  flex-shrink: 0px;
+  box-sizing: border-box;
   position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
   margin: 0px;
-  border: 1px solid orange;
+  justify-content: flex-end;
+}
+nav {
+  height: 48px;
+  line-height: normal;
+  font-size: 13px;
+  min-width: auto;
+}
+.nav {
+  height: 48px;
 }
 /* "maybe change this to navbar dunno?"NAVBAR: */
 nav#top-navbar li {
   display: flex;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 0px;
+  padding-right: 10px;
   position: relative;
   margin-left: 0px;
   margin-right: 0px;
   text-align: right;
   z-index: 986;
   align-items: center;
-  justify-content: flex-end;
-  float: right;
+}
+nav#top-navbar ul {
+  display: flex;
 }
 
 /*HEADER ELEMENTS */
 header ul li a {
-  display: inline-block;
+  display: flex;
   line-height: 24px;
   outline: none;
   font-size: 13px;
   vertical-align: middle;
-  text-decoration: none;
-  list-style: none;
 }
+header ul li a {
+  color: rgba(0, 0, 0, 0.87);
+}
+/* SIGN BUTTON */
 header ul li a.sign {
+  font-weight: 500px;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  line-height: 16px;
+  margin-right: 8px;
+  min-width: 96px;
+  padding: 9px 23px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 4px;
   border: 1px solid #4285f4;
   font-weight: bold;
   background-color: #4285f4;
   color: #fff;
-  display: inline-block;
-  line-height: 28px;
-  padding: 0px 12px;
-  border-radius: 2px;
 }
 header ul li a:hover {
   opacity: 0.85;
@@ -84,9 +118,10 @@ div.center-logo {
 }
 /* GOOGLE LOGO */
 div.center-logo img {
+  overflow: auto;
   display: inline;
   position: static;
-  padding-top: 109px;
+  margin-top: 109px;
   width: auto;
 }
 /* SEARCH BAR */
@@ -117,10 +152,9 @@ div.center-search div.search input {
   height: 34px;
 }
 /* SEARCH BAR: HOVER */
-div.center-search div.search input:hover{
+div.center-search div.search input:hover {
   box-shadow: 0 3px 10px rgba(32, 33, 36, 0.28);
   border: 1px solid #dadce0;
-
 }
 /* BUTTONS */
 div.center-search div.buttons {
@@ -156,35 +190,34 @@ div.center-search div.buttons input:hover {
 /*FOOTER*/
 footer {
   width: 100%;
-  display: block;
+  display: flex;
   right: 0px;
   left: 0px;
   bottom: 0px;
-  text-align: left;
   border-top: 1px solid #dadce0;
   line-height: 40px;
   position: absolute;
   width: 100%;
   font-size: 14px;
   background-color: #f2f2f2;
+  justify-content: space-between;
 }
 
 /* FOOTER ELEMENTS */
-footer li {
-  text-decoration: none;
-  list-style: none;
-}
+
 /* FOOTER DECORATIONS */
 footer li a {
-  display: inline-block;
   color: #70757a;
   padding-left: 27px;
   margin: 0px;
   white-space: nowrap;
-  text-decoration: none;
-
 }
-
+footer ul {
+  display: flex;
+}
+.footer-right {
+  margin-right: 27px;
+}
 /* FOOTER ELEMENTS: HOVER */
 footer ul li a:hover {
   text-decoration: underline;
@@ -193,14 +226,4 @@ footer ul li a:hover {
 /* FOOTER ELEMENTS: VISITED */
 footer li a:visited {
   color: #609;
-}
-/* FOOTER LEFT: LEFT SIDE ALIGNMENT*/
-footer ul.footer-left li {
-  float: left;
-}
-
-/*FOOTER RIGHT: RIGHT SIDE ALIGNMENT*/
-footer ul.footer-right li {
-  float: right;
-  margin-right: 50px;
 }
